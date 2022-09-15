@@ -1,0 +1,752 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato&family=Poppins&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600;8..144,700;8..144,800&display=swap");
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Flex', sans-serif; */
+
+/* fonts Link End  */
+
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+.bg-white{
+  background-color: white;
+}
+.py-lg-3{
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+}
+p-4{
+  padding: 1.5rem;
+
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+ul {
+  padding-left: 0px;
+}
+p {
+  margin-bottom: 0px;
+}
+ul .nav-item:last-child .nav-link{
+  padding-right: 0px;
+}
+.section-heading {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  color: #1c1c1c;
+  padding-bottom: 15px;
+}
+.divider {
+  display: block;
+  width: 80px;
+  height: 8px;
+  background-color: #12c8a8;
+  /* margin-top: 15px;
+  margin-bottom: 18px; */
+}
+.section-pera {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: #303030;
+  padding-top: 18px;
+  padding-bottom: 40px;
+}
+.global-btn {
+  padding: 16px 32px;
+  border-radius: 3px;
+  background-color: #12c8a8;
+  display: inline;
+  border: 1px solid #12c8a8;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 18px;
+  color: #ffffff;
+}
+.global-btn:hover {
+  border: 1px solid #12c8a8;
+  background-color: #fff;
+  color: #12c8a8;
+  cursor: pointer;
+}
+.section-subheading {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 28px;
+  color: #ffffff;
+}
+.footer-heading {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: white;
+  text-transform: capitalize;
+}
+.footer-li {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: #fff;
+  padding: 10px 0px;
+  text-transform: capitalize;
+}
+.footer-pera {
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: white;
+  padding: 30px 0px;
+}
+.wave{
+  position: absolute;
+  bottom: -40%;
+  left: 60%;
+}
+/* Global Styiles end  */
+
+/* header section  */
+.navbarnav {
+  display: flex;
+}
+
+.navbar-brand img{
+  width: 35%;
+}
+.nav-link {
+  font-family: Roboto Flex;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  color: #090808;
+  margin: 0 10px;
+}
+.nav-link:hover {
+  color: #12c8a8;
+}
+.navbar-nav .nav-link.active {
+  color: #12c8a8;
+}
+
+/* banner style start   */
+
+#banner {
+  margin-top: 52px;
+  background: url("Assets/banner-bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+#banner .container{
+  margin-top: -50px;
+}
+.heading {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 5.8rem;
+  color: #fff;
+  margin-bottom: 40px;
+  margin-top: -40px;
+}
+
+#about-section {
+  padding: 0px 0px 0px 0px;
+}
+
+/* OFFer Section Start  */
+#offer-section {
+  padding: 0px 0px;
+}
+.text-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box {
+  width: 31.2rem;
+  height: 35rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.box:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border-radius: 15px;
+  background-color: #5fafa1;
+  opacity: 0;
+  z-index: 1;
+}
+.box:hover:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: #5fafa1;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.inner-box {
+  width: 70%;
+  z-index: 999;
+}
+.box-text {
+  font-family: "Roboto Flex", sans-serif;
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 4.2rem;
+  text-transform: capitalize;
+  z-index: 999;
+}
+.box-1 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.34) 100%
+    ),
+    url(Assets/offer-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.1));
+}
+.box-2 {
+  /* background-image: url('Assets/offer-2.png'); */
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.34) 100%
+    ),
+    url(Assets/offer-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.1));
+}
+.box-3 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.34) 100%
+    ),
+    url(Assets/offer-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.1));
+}
+.box-4 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.34) 100%
+    ),
+    url(Assets/offer-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.1));
+  position: relative;
+}
+
+/* Offer Section End   */
+
+/* Roadmap Section Start  */
+
+#roadmap {
+  background:linear-gradient(180deg, #FFFFFF 7.81%, rgba(243, 255, 253, 0.92) 22.21%, rgba(213, 255, 248, 0.67) 34.38%, rgba(88, 184, 167, 0.12) 72.42%, rgba(37, 72, 66, 0) 100%),url("Assets/roadmap-bg.png"),linear-gradient(180deg,#ffffff 30%,#fcfcfa 70%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 140px;
+  background-position: center bottom;
+  padding-top: 50px;
+}
+/* timeline  */
+.main-timeline {
+  position: relative;
+  padding-top: 30px;
+  width: 80%;
+  margin: 0px auto;
+}
+.timeline {
+  position: relative;
+  width: 50%;
+}
+.card {
+  padding: 30px 25px 30px 30px;
+  background: #113630;
+  backdrop-filter: blur(300px);
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover {
+  background: #1ecfb0;
+  backdrop-filter: blur(300px);
+}
+.number {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 3.5rem;
+  color: #1ecfb0;
+  padding: 28px;
+  border-radius: 50%;
+  border: 5px solid #1ecfb0;
+  background-color: #fff;
+}
+.card-title {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  color: #fff;
+}
+.card-subtitle {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: white;
+  opacity: 0.7;
+}
+.card-pera {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  text-transform: capitalize;
+  color: white;
+}
+.left {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+/* Place the container to the right */
+.right {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+.right::after {
+  left: -12px;
+}
+
+/* NFT Section start   */
+#nft-section {
+  /* height: 90vh; */
+  background: url("Assets/nft-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 200px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#nft-section .row{
+  margin-top: -120px;
+}
+.bird {
+  transform: rotate(15deg);
+  overflow-x: hidden;
+}
+#contact-section {
+  height: auto;
+  background: url("Assets/contact-bg.png");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -230px;
+  padding-bottom: 40px;
+}
+.contact {
+  padding-top: 175px;
+}
+.form-control {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px 0px 20px 15px;
+  color: black;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.form-control:focus {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px 0px 20px 15px;
+}
+.form-control::placeholder {
+  color: white;
+}
+.footer {
+  background-color: #03241e;
+  padding: 50px 0px;
+}
+.address-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+.address-list li svg {
+  fill: white;
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+.address-list li p {
+  padding-left: 20px;
+}
+.logos svg {
+  color: white;
+  fill: white;
+  height: 20px;
+  width: 20px;
+  margin: 0px 5px;
+}
+.svg {
+  width: 20px;
+  height: 20px;
+}
+.copyright {
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  color: white;
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .heading{
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  #banner{
+    height: 65vh;
+  }
+  .section-heading {
+    font-size: 3.2rem;
+ line-height: 4.2rem;
+  }
+  .divider{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .wave {
+    bottom: -10%;
+    left: 60%;
+}
+.main-timeline{
+  padding-top: 0px;
+}
+#nft-section .row{
+  margin-top: -60px;
+}
+.contact {
+    padding-top: 95px;
+}
+  .box {
+    height: 260px;
+    width: 234px;
+  }
+  .box-text{
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+  .number{
+    padding: 24px;
+  }
+  .left{padding: 0px 0px 20px 0px;}
+  .right{padding: 0px 0px 20px 0px}
+}
+
+/* Large Devices */
+@media only screen and (max-width: 1023px) {
+  .heading {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  #about-section {
+    padding: 20px;
+  }
+  .section-heading {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    padding-bottom: 0px;
+  }
+  .divider {
+    height: 5px;
+    /* margin-top: 7px;
+    margin-bottom: 9px; */
+  }
+  .section-pera {
+    padding-top: 10px;
+  }
+  .global-btn {
+    padding: 12px 24px;
+  }
+  #offer-section {
+    padding: 50px 20px;
+  }
+  .box-text {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+
+  .timeline {
+    width: 75%;
+    padding-top: 0px;
+  }
+  .right {
+    left: 25%;
+  }
+     .card{
+    padding: 30px 25px 30px 30px;
+  }
+  .number{
+    padding: 20px;
+  }
+  .card-subtitle{font-size: 1.8rem; line-height: 2.8rem;}
+  .card-title{font-size: 2.2rem;line-height: 3.2rem;}
+  .card-pera{font-size: 1.6rem; line-height: 2.6rem;}
+  .footer {
+    padding: 20px;
+  }
+}
+
+/* Medium Devices */
+@media only screen and (max-width: 991px) {
+  .navbar-toggler {
+    border: 1px solid #555555;
+  }
+  .navbar-toggler-icon {
+    background-image: url("Assets/menu.svg");
+    height: 30px;
+    width: 30px;
+  }
+  #banner .container{
+    margin-top: 0px;
+  }
+  #about-section {
+    padding: 0px 20px 20px 20px;
+  }
+  #offer-section {
+    padding: 20px;
+  }
+  .box {
+    width: 49%;
+  }
+  .inner-box {
+    width: 50%;
+  }
+  #roadmap{
+    padding-top: 0px;
+  }
+  #nft-section .row{
+    margin-top: 0px;
+  }
+  .contact{
+    padding-top: 85px;
+  }
+  .wave {
+    bottom: 8%;
+    left: 60%;
+}
+}
+@media only screen and (max-width: 880px) {
+  .wave {
+    display: none;
+}
+  .navbar-brand {
+    width: 80%;
+  }
+  #contact-section {
+    margin-top: -185px;
+  }
+}
+
+/* Small Devices  */
+@media only screen and (max-width: 767px) {
+  .heading {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+  .navbar-toggler-icon {
+    height: 20px;
+    width: 20px;
+  }
+  #banner {
+    /* background-position: bottom center; */
+    background-size: cover;
+    height: auto;
+    padding: 120px 20px;
+  }
+  #about-section {
+    padding: 20px;
+  }
+  .section-heading {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    padding-bottom: 0px;
+  }
+  .divider {
+    height: 5px;
+    margin-top: 7px;
+    margin-bottom: 9px;
+  }
+  .section-pera {
+    padding-top: 10px;
+  }
+  .global-btn {
+    padding: 12px 24px;
+  }
+  #offer-section {
+    padding: 20px;
+  }
+
+  #roadmap {
+    background: linear-gradient(180deg, #FFFFFF 7.81%, rgba(243, 255, 253, 0.92) 22.21%, rgba(213, 255, 248, 0.67) 34.38%, rgba(88, 184, 167, 0.12) 72.42%, rgba(37, 72, 66, 0) 100%),url("Assets/mobile-rodmap-bg.png"),linear-gradient(180deg,#fff 30%,#fcfcfa 70%);
+    background-position: center bottom;
+    background-size: cover;
+    padding-bottom: 70px;
+  }
+
+  /* .card-number {
+    height: 75px;
+    width: 75px;
+  } */
+  /*.number {
+    padding: 14px;
+  } */
+  #nft-section {
+    padding: 20px 20px 130px 20px;
+  }
+  .box-text {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .text-box {
+    padding: 15px 0 0 0;
+  }
+   .card-number{
+    height: 60px;
+    width: 65px;
+  }
+  .number{
+    padding: 10px;
+  }
+  .card-subtitle{font-size: 1.6rem; line-height: 2.6rem;}
+  .card-title{font-size: 2rem;line-height: 3rem;}
+  .card-pera{font-size: 1.4rem; line-height: 2.4rem;}
+  #contact-section {
+    height: auto;
+    background: url("Assets/mobile-contact-bg.png");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -115px;
+    padding: 20px 20px 80px 20px;
+  }
+  .contact {
+    padding-top: 100px;
+  }
+  .form-control {
+    padding: 10px 0px 10px 15px;
+  }
+  .footer {
+    padding: 20px;
+  }
+  .footer-logo {
+    width: 80%;
+  }
+  .main-timeline {
+    padding-top: 0px;
+    padding: 20px;
+  }
+  .timeline {
+    width: 100%;
+    padding-top: 0px;
+  }
+  .card {
+    padding: 20px;
+  }
+  .right {
+    padding: 0px 0px 20px 0px;
+  }
+  .left {
+    padding: 0px 0px 20px 0px;
+  }
+  .left::after,
+  .right::after {
+    left: 18px;
+  }
+  .left::before {
+    right: auto;
+  }
+  .right {
+    left: 0%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar-brand img{
+    width: 50%;
+  }
+ .heading{
+  margin-top: 0px;
+ }
+  .inner-box {
+    width: 80%;
+  }
+  #roadmap {
+    padding-top: 0px;
+  }
+  #nft-section .row{
+    margin-top: -40px;
+  }
+  .card-number{
+    height: 60px;
+    width: 65px;
+  }
+  .number{
+    padding: 10px;
+  }
+
+}
