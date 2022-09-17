@@ -126,6 +126,12 @@ ul .nav-item:last-child .nav-link{
   bottom: -40%;
   left: 60%;
 }
+
+#about-section .container,
+#offer-section .container,
+#nft-section .container{
+  padding: 20px 0px;
+ }
 /* Global Styiles end  */
 
 /* header section  */
@@ -177,7 +183,7 @@ ul .nav-item:last-child .nav-link{
 }
 
 #about-section {
-  padding: 0px 0px 0px 0px;
+  padding: 20xp 0px 20px 0px;
 }
 
 /* OFFer Section Start  */
