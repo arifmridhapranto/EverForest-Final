@@ -30,7 +30,9 @@ html {
 }
 p-4{
   padding: 1.5rem;
+
 }
+
 a {
   text-decoration: none;
 }
@@ -111,10 +113,11 @@ ul .nav-item:last-child .nav-link{
   line-height: 2.4rem;
   color: #fff;
   padding: 10px 0px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 .footer-pera {
-  font-family: Inter;
+  font-family: "Lato", sans-serif;
+  /* font-family: Inter; */
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.4rem;
@@ -126,12 +129,6 @@ ul .nav-item:last-child .nav-link{
   bottom: -40%;
   left: 60%;
 }
-
-#about-section .container,
-#offer-section .container,
-#nft-section .container{
-  padding: 20px 0px;
- }
 /* Global Styiles end  */
 
 /* header section  */
@@ -160,6 +157,7 @@ ul .nav-item:last-child .nav-link{
 /* banner style start   */
 
 #banner {
+  margin-top: 52px;
   background: url("Assets/banner-bg.png");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -168,9 +166,9 @@ ul .nav-item:last-child .nav-link{
   display: flex;
   align-items: center;
 }
-/* #banner .container{
+#banner .container{
   margin-top: -50px;
-} */
+}
 .heading {
   font-family: "Roboto Flex", sans-serif;
   font-size: 4.8rem;
@@ -182,7 +180,7 @@ ul .nav-item:last-child .nav-link{
 }
 
 #about-section {
-  padding: 20xp 0px 20px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 /* OFFer Section Start  */
@@ -236,7 +234,7 @@ ul .nav-item:last-child .nav-link{
   font-size: 3.2rem;
   font-weight: 600;
   line-height: 4.2rem;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   z-index: 999;
 }
 .box-1 {
@@ -355,7 +353,7 @@ ul .nav-item:last-child .nav-link{
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   color: white;
 }
 .left {
@@ -426,7 +424,7 @@ ul .nav-item:last-child .nav-link{
 .address-list li {
   display: flex;
   align-items: center;
-  padding: 10px 0px;
+  padding-bottom: 15px;
 }
 .address-list li svg {
   fill: white;
@@ -626,6 +624,13 @@ ul .nav-item:last-child .nav-link{
   #about-section {
     padding: 20px;
   }
+  #about-section .container .row{
+    flex-direction: column-reverse;
+  }
+    #about-section .container .row .about-img{
+      margin-top:30px;
+     }
+
   .section-heading {
     font-size: 3.2rem;
     line-height: 4.2rem;
