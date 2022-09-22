@@ -477,9 +477,22 @@ header{
   background-color: #03241e;
   padding: 50px 0px;
 }
+
+.footer-logo{
+  width: 25%;
+}
+.we-do{
+  width: 12%;
+}
+.refference{
+  width: 8%;
+}
+.address{
+  width: 25%;
+}
 .address-list li {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 .address-list li svg {
   fill: white;
@@ -500,6 +513,7 @@ header{
 .svg {
   width: 20px;
   height: 20px;
+  padding: 10px 0px;
 }
 .copyright {
   font-family: Poppins;
@@ -646,6 +660,22 @@ header{
     bottom: 8%;
     left: 60%;
 }
+
+.footer .row{
+  gap: 50px;
+}
+.footer-logo{
+  width: 50%;
+}
+.refference{
+  width: 40%;
+}
+.we-do{
+  width: 50%;
+}
+.address{
+  width: 40%;
+}
 }
 @media only screen and (max-width: 880px) {
   .wave {
@@ -790,6 +820,21 @@ header{
   .right {
     left: 0%;
   }
+  .footer .row{
+  gap: 0px;
+}
+  .footer-logo{
+  width: 100%;
+}
+.refference{
+  width: 100%;
+}
+.we-do{
+  width: 100%;
+}
+.address{
+  width: 100%;
+}
 }
 
 @media only screen and (max-width: 576px) {
