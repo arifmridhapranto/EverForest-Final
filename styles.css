@@ -132,10 +132,13 @@ ul .nav-item:last-child .nav-link{
 /* Global Styiles end  */
 
 /* header section  */
-.navbarnav {
-  display: flex;
+header{
+  padding: 20px 0px;
 }
-
+.brand{
+  display: flex;
+  align-items: center;
+}
 .navbar-brand img{
   width: 35%;
 }
@@ -153,6 +156,59 @@ ul .nav-item:last-child .nav-link{
 .navbar-nav .nav-link.active {
   color: #12c8a8;
 }
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+#hamburger-icon div {
+  width: 25px;
+  height: 3px;
+  margin: 6px 0;
+  background-color: #12c8a8;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu li {
+  text-align: left;
+  margin: 10px 0px;
+}
+
 
 /* banner style start   */
 
@@ -424,7 +480,6 @@ ul .nav-item:last-child .nav-link{
 .address-list li {
   display: flex;
   align-items: center;
-  padding-bottom: 15px;
 }
 .address-list li svg {
   fill: white;
@@ -556,13 +611,12 @@ ul .nav-item:last-child .nav-link{
 
 /* Medium Devices */
 @media only screen and (max-width: 991px) {
-  .navbar-toggler {
-    border: 1px solid #555555;
+   header nav {
+    display: none;
   }
-  .navbar-toggler-icon {
-    background-image: url("Assets/menu.svg");
-    height: 30px;
-    width: 30px;
+
+  #hamburger-icon {
+    display: block;
   }
   #banner .container{
     margin-top: 0px;
@@ -611,6 +665,9 @@ ul .nav-item:last-child .nav-link{
     font-size: 3.2rem;
     line-height: 4.2rem;
   }
+  #menu-btn{
+        display: inline-block;
+    }
   .navbar-toggler-icon {
     height: 20px;
     width: 20px;

@@ -13,33 +13,39 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
 
+
+
     <!-- custom css links -->
     <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
-    <header class="py-lg-3 p-4 fixed-top bg-white">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-white " aria-label="Ninth navbar example">
-            <div class="container-lg">
-                <a class="navbar-brand" href="/"><img src="Assets/logo.png" alt=""
-                        class="d-inline-block align-text-top"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Avaleht</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about-section">Ettevõttest</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#roadmap">Teekaart</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#nft-section">NFT</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact-section">Kontakt</a></li>
-                    </ul>
-                </div>
-            </div>
+    <header class="py-lg-4 p-4 fixed-top bg-white">
+        <div class="container-lg d-flex">
+        <div class="brand"><a href="#banner" class="navbar-brand"><img src="Assets/logo.png" alt="logo" class="d-inline-block "></a></div>
+        <nav>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#banner">Avaleht</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-section">Ettevõttest</a></li>
+                <li class="nav-item"><a class="nav-link" href="#roadmap">Teekaart</a></li>
+                <li class="nav-item"><a class="nav-link" href="#nft-section">NFT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-section">Kontakt</a></li>
+            </ul>
         </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#banner">Avaleht</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about-section">Ettevõttest</a></li>
+                <li class="nav-item"><a class="nav-link" href="#roadmap">Teekaart</a></li>
+                <li class="nav-item"><a class="nav-link" href="#nft-section">NFT</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-section">Kontakt</a></li>
+            </ul>
+        </div>
+        </div>
     </header>
     <main>
 
@@ -412,11 +418,13 @@
                     <ul class="address-list">
                         <li>
                             <div class="svg">
-                                <svg width="15" height="20" viewBox="0 0 15 21" fill="none"
+                                <svg id="Layer_1" enable-background="new 0 0 26 26" height="512" viewBox="0 0 26 26" width="512"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.5 0.932617C3.36458 0.932617 0 3.92336 0 7.5993C0 8.70281 0.310385 9.79695 0.900438 10.7674L7.08986 20.7178C7.17226 20.8504 7.32927 20.9326 7.5 20.9326C7.67073 20.9326 7.82774 20.8504 7.91014 20.7178L14.1018 10.7641C14.6896 9.79695 15 8.70277 15 7.59926C15 3.92336 11.6354 0.932617 7.5 0.932617ZM7.5 10.9326C5.43229 10.9326 3.75002 9.43727 3.75002 7.5993C3.75002 5.76133 5.43229 4.26598 7.5 4.26598C9.56771 4.26598 11.25 5.76133 11.25 7.5993C11.25 9.43727 9.56771 10.9326 7.5 10.9326Z"
-                                        fill="white" />
+                                    <g id="_x34_7">
+                                        <path
+                                            d="m24.6846504 10.6859207-3.4213867-2.8834839v-4.0949096c0-.4226685-.3425903-.7652588-.7652588-.7652588h-2.4252319c-.4227295 0-.7653809.3425903-.7653809.7652588v.7590942l-3.6398306-3.0671997c-.3856812-.355896-.9691772-.355896-1.3449707 0l-11.0072021 9.286499c-.2966919.2767944-.3955688.7021484-.2471924 1.0877075.1483765.3759155.5141602.6231689.9197998.6231689h1.592041v11.4817505c0 .5439453.4451294.9889526.9890137.9889526h16.8618774c.5438843 0 .9889526-.4450073.9889526-.9889526v-11.4817504h1.5922241c.4054565 0 .7714233-.2472534.9197388-.6330566.1483145-.3756714.0494376-.8010255-.2471933-1.0778199zm-10.9379263 10.5862427c-.425354.5834351-1.2955933.5834351-1.7307129 0-1.3647461-1.8790283-3.876709-5.5777588-3.876709-7.4766235 0-2.6107788 2.1262207-4.7371826 4.7469482-4.7371826 2.6207886 0 4.7470694 2.1264038 4.7470694 4.7371826.0000001 1.8988647-2.5120229 5.5975952-3.8865957 7.4766235z" />
+                                        <circle cx="12.886" cy="13.232" r="1.978" />
+                                    </g>
                                 </svg>
                             </div>
                             <p class="footer-li">
@@ -503,12 +511,12 @@
         </div>
     </footer>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+<!-- <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
