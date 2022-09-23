@@ -214,7 +214,7 @@ header{
 
 #banner {
   margin-top: 52px;
-  background: url("Assets/banner-bg.svg");
+  background: url("Assets/banner-bg.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
